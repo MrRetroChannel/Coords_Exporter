@@ -18,7 +18,7 @@ public class Exporter {
             String X = Integer.toString(Minecraft.getMinecraft().player.getPosition().getX());
             String Z = Integer.toString(Minecraft.getMinecraft().player.getPosition().getZ());
             try {
-                FileWriter temp = new FileWriter("C:\\Users\\MrRetro\\Desktop\\MyCoords.txt", true);
+                FileWriter temp = new FileWriter(System.getProperty("user.home") + "Desktop\\MyCoords.txt", true);
                 BufferedWriter writer = new BufferedWriter(temp);
                 writer.append(X + ' ' + Z + ' ' + '\n');
                 writer.flush();
