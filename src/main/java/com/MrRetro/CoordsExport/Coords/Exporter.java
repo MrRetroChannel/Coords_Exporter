@@ -9,8 +9,8 @@ import net.minecraftforge.fml.common.gameevent.InputEvent.KeyInputEvent;
 import org.lwjgl.input.Keyboard;
 
 public class Exporter {
-    public Exporter() {
-    }
+
+    public Exporter() {}
 
     @SubscribeEvent
     public void pressed(KeyInputEvent event) {
@@ -23,8 +23,7 @@ public class Exporter {
                 writer.append(X + ' ' + Z + ' ' + '\n');
                 writer.flush();
                 writer.close();
-            } catch (IOException mmyeah) {
-            }
+            } catch (IOException mmyeah) {}
         }
     }
 }
